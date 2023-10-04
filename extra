@@ -55,8 +55,35 @@ Html/css/jquery
 
 Node JS @ 8:00 PM (IST) By Mr.Aakash
 Day-1 https://youtu.be/YLSKLQgaIIA
+Day-2 https://youtu.be/M9mMKyPXv9k
+
 
 NodeJs
 Single Threaded Async Non-Blocking
 
 open source
+
+npm > node package manager
+
+
+JSON
+> Javascript object notation
+Way to represent the data
+
+key value 
+[
+    {
+        "name":"Ankit",
+        "class":"Node"
+    },
+    {
+        "name":"Neha",
+        "class":"React"
+    }
+]
+
+package.json
+> this is entry point to the app
+> meta data (like version, description)
+> scripts (start, test,build)
+> packages
