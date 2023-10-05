@@ -11,6 +11,8 @@ Ifelse,Function,object,JSON,Variables
 
 
 NPM
+package.json
+////////////////////
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
@@ -56,6 +58,7 @@ Html/css/jquery
 Node JS @ 8:00 PM (IST) By Mr.Aakash
 Day-1 https://youtu.be/YLSKLQgaIIA
 Day-2 https://youtu.be/M9mMKyPXv9k
+Day-3 https://youtu.be/6Jl1TvbCZL0
 
 
 NodeJs
@@ -87,3 +90,13 @@ package.json
 > meta data (like version, description)
 > scripts (start, test,build)
 > packages
+
+//steps to generate package.json
+> Go inside the folder using cmd/terminal
+> type npm init
+> Answer all questions
+> type yes
+
+//steps to install packages
+> Go inside the folder using cmd/terminal
+> npm install packagename
