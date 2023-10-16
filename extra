@@ -104,3 +104,37 @@ package.json
 //steps to install packages
 > Go inside the folder using cmd/terminal
 > npm install packagename
+
+
+local dependency
+> only related to the folder
+> can only be used in same folder
+> added in package.json
+> open cmd and go inside the folder where you want to install
+> npm i package
+
+dev dependency
+> all thing same like local dependency
+> only need at the time of development
+> open cmd and go inside the folder where you want to install
+> npm i packagename --save-dev
+
+global dependency
+> install in laptop drive instend of application folder
+> independent of application 
+> only used generating , run app
+> we need admin permission to install
+> only accesible befor app start
+
+# window
+> open cmd as admin
+> npm i -g packagename
+
+# mac/linux
+> open terminal
+> sudo npm i -g packagename
+
+# nodemon
+* Only one time in laptop
+> open cmd as admin
+> npm i -g nodemon

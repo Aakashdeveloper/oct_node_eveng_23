@@ -1,15 +1,16 @@
 let express = require('express');
 let app = express();
-let port = 9101
+let port = 9101;
+let categoryRouter = require('./src/controller/categoryRouter');
+let productRouter = require('./src/controller/productsRouter');
 
 //default Route
 app.get('/',function(req,res){
-    res.send('Hiii From Express')
-})
+    res.send('Hiii From Express');
+});
 
-app.get('/products',function(req,res){
-    res.send("Hii From Products")
-})
+app.use('/category',categoryRouter);
+app.use('/products',productRouter);
 
 
 app.listen(port,function(err){
