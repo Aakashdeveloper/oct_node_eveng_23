@@ -1,0 +1,27 @@
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
+
+> in C drive make one folder by the name of data
+C/data
+> inside data make folder by name of db
+C/data/db
+
+> 27017 Default port
+
+# How to start mongodb server
+> open cmd and go inside bin folder
+C:/programFile/mongodb/server/7.0.0/bin
+* mongod
+(this will start the mongodb server)
+* Do not close cmd
+
+# How to start client
+> open the new cmd
+C:/programFile/mongodb/server/7.0.0/bin
+* mongosh
+(to test any kind of query)
+
+
+# mac
+> open terminal
+mkdir data/db
+mongod --config /usr/local/etc/mongod.conf --fork

@@ -139,4 +139,5 @@ global dependency
 > open cmd as admin
 > npm i -g nodemon
 
-# Setup mongodb
+
+https://www.mongodb.com/try/download/community
