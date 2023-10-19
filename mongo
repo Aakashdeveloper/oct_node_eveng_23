@@ -25,3 +25,56 @@ C:/programFile/mongodb/server/7.0.0/bin
 > open terminal
 mkdir data/db
 mongod --config /usr/local/etc/mongod.conf --fork
+
+
+RollNo | Hindi | English 
+  1    |  80   | 
+  2    |       |  90
+  3    |  89   |
+
+[
+    {
+        "rollNo":1,
+        "Hindi":80
+    },
+    {
+        "rollNo":2,
+        "English":90
+    },
+    {
+        "rollNo":3,
+        "Hindi":89
+    }
+]
+
+SQL        Mongo
+Database   Database
+Table      Collection
+Row        Document
+Select     Find
+Insert     Insert
+Delete     Remove
+Update     Update
+
+# To See all database
+> show dbs
+
+# To go inside database
+> use database name
+
+# To see collections in database
+> show collections
+
+# To see all data in collection
+db.collectionName.find()
+
+# Step to create database
+> use dbname
+
+# insert document
+db.users.insert({"name":"Amit"})
+
+db.users.insert({"name":"Nikita","city":"Paris"})
+
+# find on basis of conditions
+db.products.find({Color: "Grey",Brand: 'Lee'})
