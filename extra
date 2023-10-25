@@ -13,8 +13,8 @@ Ifelse,Function,object,JSON,Variables
 NPM
 package.json
 Basic NodeJS(in built)(Os,file,http)
-////////////////////
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
+////////////////////
 Third Party Api (Weather Api)
 Node-Es6(.babel)
 Redis v3  > 6379
@@ -26,6 +26,7 @@ Multer
 Redis Cloud
 Upload image in db
 S3 Imageupload
+
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
 Api with NodeJS(Rest)>1
@@ -140,3 +141,15 @@ global dependency
 > npm i -g nodemon
 
 # Setup mongodb
+
+
+
+Params
+> What we pass after /
+> We need to declare in route
+> if declare then complusory to pass
+
+QueryParams
+> What we pass after ?
+> No need to declare
+> No need to pass
