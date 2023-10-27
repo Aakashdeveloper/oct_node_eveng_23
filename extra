@@ -9,14 +9,13 @@ https://github.com/Aakashdeveloper > Follow
 JavaScript
 Ifelse,Function,object,JSON,Variables
 
-
 NPM
 package.json
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
-////////////////////
 Third Party Api (Weather Api)
 Node-Es6(.babel)
+////////////////////
 Redis v3  > 6379
 Redis v4
 Redisv4 With Mongov5
@@ -148,8 +147,13 @@ Params
 > What we pass after /
 > We need to declare in route
 > if declare then complusory to pass
+> req.params.id
 
 QueryParams
 > What we pass after ?
 > No need to declare
 > No need to pass
+> req.query.city
+
+
+https://redis.io/download/
