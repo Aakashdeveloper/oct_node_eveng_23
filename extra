@@ -15,14 +15,15 @@ Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
 Node-Es6(.babel)
-////////////////////
 Redis v3  > 6379
 Redis v4
+////////////////////
 Redisv4 With Mongov5
+Redis Cloud
+
 ImageUpload
 ImageUpload(formidable)
 Multer
-Redis Cloud
 Upload image in db
 S3 Imageupload
 
@@ -157,3 +158,12 @@ QueryParams
 
 
 https://redis.io/download/
+
+//Redis
+KEYS *
+set key value
+get key
+del key
+FLUSHALL
+
+set keyname value ex time
