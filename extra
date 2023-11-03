@@ -18,12 +18,13 @@ Node-Es6(.babel)
 Redis v3  > 6379
 Redis v4
 Redisv4 With Mongov5
-////////////////////
-
-Redis Cloud
 ImageUpload
+////////////////////
+Redis Cloud
+
 ImageUpload(formidable)
 Multer
+
 Upload image in db
 S3 Imageupload
 
