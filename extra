@@ -19,15 +19,12 @@ Redis v3  > 6379
 Redis v4
 Redisv4 With Mongov5
 ImageUpload
-////////////////////
-Redis Cloud
-
 ImageUpload(formidable)
 Multer
-
 Upload image in db
 S3 Imageupload
-
+////////////////////
+Redis Cloud
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
 Api with NodeJS(Rest)>1
