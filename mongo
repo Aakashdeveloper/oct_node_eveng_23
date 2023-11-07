@@ -78,3 +78,38 @@ db.users.insert({"name":"Nikita","city":"Paris"})
 
 # find on basis of conditions
 db.products.find({Color: "Grey",Brand: 'Lee'})
+
+
+////mongoCloud
+SignUp> https://cloud.mongodb.com/
+Create Cluster
+
+Database Access
+    > Add New Database User
+        > Add UserName
+        > AutoGenerate Password
+            > Built-in Role
+            > Atlas Admin
+                > Add User
+
+Network Access
+    > Add IP Address
+        > 0.0.0.0/0
+        > Any Comment
+
+
+mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+mongodb+srv://default:JBh32h3h@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+//condition 
+
+db.restaurants.find({condition},{projection})
+
+
+db.restaurants.find({state_id:2},{restaurant_name:1,address:1,cost:1})
+
+
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1})
+
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1,_id:0})
