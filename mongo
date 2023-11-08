@@ -113,3 +113,87 @@ db.restaurants.find({state_id:2},{restaurant_name:1,address:1,cost:1})
 db.restaurants.find({},{restaurant_name:1,address:1,cost:1})
 
 db.restaurants.find({},{restaurant_name:1,address:1,cost:1,_id:0})
+
+
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1}).sort({cost:1})
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1}).sort({cost:-1})
+
+
+db.restaurants.find({},{restaurant_name:1,address:1,cost:1}).sort({cost:1}).skip(9).limit(3)
+
+db.restaurants.find({rating_text:"Excellent"})
+
+db.restaurants.find({"rating_text":"Excellent"})
+
+db.restaurants.find({"rating_text":"Excellent"})
+db.restaurants.find({"mealTypes.mealtype_id":1})
+
+db.restaurants.find({
+    $and:[
+        {"mealTypes.mealtype_id":1},
+        {"cuisines.cuisine_id":1}
+    ]
+},{restaurant_name:1,mealTypes:1,cuisines:1})
+
+
+db.restaurants.find({
+    $or:[
+        {"mealTypes.mealtype_id":1},
+        {"cuisines.cuisine_id":1}
+    ]
+},{restaurant_name:1,mealTypes:1,cuisines:1})
+
+
+db.restaurants.find({"mealTypes.mealtype_id":{$in:[1,2,4]}},{restaurant_name:1,mealTypes:1,cuisines:1})
+
+
+db.restaurants.find({cost:{$gt:900}},{restaurant_name:1,cost:1})
+db.restaurants.find({cost:{$lt:900}},{restaurant_name:1,cost:1})
+
+db.restaurants.find({cost:{$gt:500,$lt:1000}},{restaurant_name:1,cost:1})
+
+////update
+db.users.updateOne({condition},{$set:value})
+
+db.users.updateOne(
+    {
+        name:"Nikita"
+    },
+    {
+        $set:{
+            "phone":77687787,
+            "role":"Admin"
+        }
+    }
+)
+
+db.users.updateOne(
+    {
+        name:"Nikita"
+    },
+    {
+        $set:{
+            "role":"User"
+        }
+    }
+)
+
+db.users.updateOne(
+    {
+        name:"Nikita"
+    },
+    {
+        $unset:{
+            "phone":1
+        }
+    }
+)
+
+//delete
+//remove all data
+db.users.remove({})
+
+//remove particular data
+db.users.remove({condition})
+
+db.users.remove({"name":"Nikita"})

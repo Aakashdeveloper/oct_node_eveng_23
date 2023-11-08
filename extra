@@ -23,9 +23,10 @@ ImageUpload(formidable)
 Multer
 Upload image in db
 S3 Imageupload
-////////////////////
 Redis Cloud
 MongoDb Basic >27017  (local/cloud)
+////////////////////
+
 Zomato App backend
 Api with NodeJS(Rest)>1
 DashBoard(Crud)
