@@ -17,6 +17,8 @@ async function getData(colName,query){
     }catch(err){
         output = {"Error":`Error in the query for getting data`}
     }
+
+    return output
 }
 
 module.exports = {
