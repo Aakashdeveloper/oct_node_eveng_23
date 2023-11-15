@@ -36,8 +36,33 @@
 {"id":[1,2,3]}
 
 > (POST) Place The orders
+* http://localhost:8771/placeOrder
+{
+        "orderId": 3,
+        "name": "Nikita",
+        "email": "nikki@gmail.com",
+        "address": "Hom 25",
+        "phone": 8934645457,
+        "cost": 356,
+        "menuItem": [
+            5,9,12
+        ],
+        "status": "Pending"
+}
 
 // Page5 (Final Page)
 > (GET) List of orders / order wrt email
+* http://localhost:8771/orders?email=nikki@gmail.com
+
 > (PUT) Update order status
+* http://localhost:8771/updateOrder
+{
+    "_id": "6554dde8dfa092d5afa65665",
+    "status":"Delivered"
+}
+
 > (DELETE) Delete Order
+* http://localhost:8771/deleteOrder
+{
+    "_id": "6554dde8dfa092d5afa65665"
+}

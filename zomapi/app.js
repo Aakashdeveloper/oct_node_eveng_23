@@ -7,7 +7,8 @@ let cors = require('cors');
 let bodyParser = require('body-parser')
 let port = process.env.PORT || 3001;
 let { dbConnect, getData,getDataSort,
-    getDataSortLimit} = require('./Controller/dbController');
+    getDataSortLimit,postData,updateData,
+    deleteData} = require('./Controller/dbController');
 
 
 app.use(cors());
@@ -133,6 +134,52 @@ app.post('/menuDetails',async(req,res) => {
     }
    
 })
+
+//placeOrder
+app.post('/placeOrder',async(req,res) => {
+    let data = req.body;
+    let collection = 'orders';
+    let response = await postData(collection,data);
+    res.send(`Order Placed ${response}`)
+})
+
+//get Orders
+app.get('/orders',async(req,res) => {
+    let query = {};
+    if(req.query.email){
+        query = { email: req.query.email}
+    }
+    let output = await getData('orders',query);
+    res.send(output)
+})
+
+//updateOrder
+app.put('/updateOrder',async(req,res) => {
+    let collection = 'orders';
+    let condition = {_id:new ObjectId(req.body._id)};
+    let data = {
+        $set:{
+            "status":req.body.status
+        }
+    }
+    let output = await updateData(collection,condition,data);
+    res.send(output);
+});
+
+
+//delete order
+app.delete('/deleteOrder',async(req,res) => {
+    let collection = 'orders';
+    let condition = {_id:new ObjectId(req.body._id)};
+    let rowCount = await getData(collection,condition);
+    if(rowCount.length > 0){
+       await deleteData(collection,condition);
+        res.send('Data Deleted')
+    }else{
+        res.send('No Record Found')
+    }
+})
+
 
 app.listen(port,() => {
     dbConnect();
