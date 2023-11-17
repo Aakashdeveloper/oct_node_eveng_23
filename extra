@@ -26,10 +26,10 @@ S3 Imageupload
 Redis Cloud
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
-////////////////////
 Api with NodeJS(Rest)>1
-DashBoard(Crud)
 Swagger
+////////////////////
+DashBoard(Crud)
 Testing 
 
 Github
@@ -39,6 +39,7 @@ Pm2
 Nginx
 Jenkins
 Docker
+
 Email With Node(nodemailer)
 TelegramChat
 Login/Logout(JWT)

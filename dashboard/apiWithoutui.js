@@ -3,6 +3,8 @@ const app = express();
 const {MongoClient,ObjectId} = require('mongodb');
 const mongoUrl = "mongodb://127.0.0.1/27017";
 const client = new MongoClient(mongoUrl);
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json')
 
 async function main(){
     await client.connect()
@@ -12,6 +14,8 @@ const collection = client.db('octnode').collection('dashboard');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const port = process.env.PORT || 7710;
+
+app.use('/api-doc',swaggerUi.serve,swaggerUi.setup(swaggerDocument));
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -95,7 +99,7 @@ app.put('/updateUser',async(req,res) => {
             }
         }
     )
-    req.send('Record updated')
+    res.send('Record updated')
 })
 
 
