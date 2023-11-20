@@ -28,7 +28,7 @@ app.get('/health',(req,res) => {
 //addUsers
 app.post('/addUser',async(req,res) => {
     await collection.insertOne(req.body);
-    res.send('User Added')
+    res.status(202).send('User Added')
 })
 
 //get users

@@ -28,9 +28,11 @@ MongoDb Basic >27017  (local/cloud)
 Zomato App backend
 Api with NodeJS(Rest)>1
 Swagger
+Testing 
+CodeCovarge
 ////////////////////
 DashBoard(Crud)
-Testing 
+
 
 Github
 --Deployment of app---
@@ -42,6 +44,8 @@ Docker
 
 Email With Node(nodemailer)
 TelegramChat
+
+
 Login/Logout(JWT)
 Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
 Oauth(with google)

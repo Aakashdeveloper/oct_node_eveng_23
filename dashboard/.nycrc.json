@@ -1,0 +1,12 @@
+{
+    "extension":[
+        ".js"
+    ],
+    "reporter":[
+        "lcov",
+        "text-summary"
+    ],
+    "exclude":[
+        "*/node_modules/**"
+    ]
+}
