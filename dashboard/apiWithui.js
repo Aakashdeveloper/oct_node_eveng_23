@@ -31,8 +31,16 @@ app.get('/health',(req,res) => {
 
 //addUsers
 app.post('/addUser',async(req,res) => {
-    await collection.insertOne(req.body);
-    res.status(202).send('User Added')
+    let data ={
+        name:req.body.name,
+        city:req.body.city,
+        phone:req.body.phone,
+        role:req.body.body?req.body.body:'User',
+        isActive:true
+    }
+    await collection.insertOne(data);
+    //res.status(202).send('User Added')
+    res.redirect('/');
 });
 
 app.get('/new',async(req,res) => {

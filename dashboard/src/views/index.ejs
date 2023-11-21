@@ -176,7 +176,7 @@
             if(response === true){
                 $.ajax({
                     type: 'PUT',
-                    url: '/deactivateUser',
+                    url: '/deactivatedUser',
                     method: 'put',
                     data: {"_id":id},
                     success: function(data){
@@ -200,7 +200,7 @@
             if(response === true){
                 $.ajax({
                     type: 'PUT',
-                    url: '/activateUser',
+                    url: '/activatedUser',
                     method: 'put',
                     data: {"_id":id},
                     success: function(data){
