@@ -35,6 +35,7 @@ DashBoard(Crud)
 Github
 --Deployment of app---
 render
+Email With Node(nodemailer)
 ////////////////////
 
 Pm2
@@ -42,18 +43,19 @@ Nginx
 Jenkins
 Docker
 
-Email With Node(nodemailer)
-TelegramChat
-
-
 Login/Logout(JWT)
+
+TelegramChat
+Chatapp
+
 Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
 Oauth(with google)
 GraphQl API
+
 NodeJs with postgres
 FIREBASE
 Paytm-Payment
-Chatapp
+
 AWS lambda micorservice
 --------NOT---------
 React/Angular
