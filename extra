@@ -35,27 +35,28 @@ DashBoard(Crud)
 Github
 --Deployment of app---
 render
-Email With Node(nodemailer)
-////////////////////
-
 Pm2
 Nginx
+
+Email With Node(nodemailer)
+Login/Logout(JWT)
+Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
+
+////////////////////
 Jenkins
 Docker
 
-Login/Logout(JWT)
-
+Oauth(with google)
 TelegramChat
 Chatapp
 
-Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
-Oauth(with google)
-GraphQl API
 
+
+GraphQl API
 NodeJs with postgres
 FIREBASE
-Paytm-Payment
 
+Paytm-Payment
 AWS lambda micorservice
 --------NOT---------
 React/Angular
@@ -180,3 +181,11 @@ R > Read    GET
 U > Update  PUT
 D > Delete  Delete
 
+
+npm i -g pm2
+
+pm2 start filename
+pm2 stop
+pm2 status
+
+pm2 start filename -i processNumber
