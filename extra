@@ -43,17 +43,13 @@ Login/Logout(JWT)
 Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
 Oauth(with google)
 NodeJs with postgres
+TelegramChat
+Chatapp
+GraphQl API
 ////////////////////
 Jenkins
 Docker
-
-
-TelegramChat
-Chatapp
-
-GraphQl API
 FIREBASE
-
 Paytm-Payment
 AWS lambda micorservice
 --------NOT---------
@@ -187,3 +183,8 @@ pm2 stop
 pm2 status
 
 pm2 start filename -i processNumber
+
+
+npm i -g json-server
+
+json-server --watch db.json --port 9002
