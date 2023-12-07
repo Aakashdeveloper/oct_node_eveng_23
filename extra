@@ -188,3 +188,6 @@ pm2 start filename -i processNumber
 npm i -g json-server
 
 json-server --watch db.json --port 9002
+
+docker build . -t imagename
+docker run -p 8000:3000 imagename
